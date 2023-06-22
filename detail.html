@@ -29,7 +29,7 @@
         <!-- * * Tip * * You can use text or an image for your navbar brand.-->
         <!-- * * * * * * When using an image, we recommend the SVG format.-->
         <!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
-        <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="home_user.html">INVENTARIS RUMAH SAKIT</a>
+        <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="index.html">INVENTARIS RUMAH SAKIT</a>
 
         <!-- Navbar Items-->
         <ul class="navbar-nav align-items-center ms-auto">
@@ -48,7 +48,7 @@
                         </div>
                     </h6>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="index_user.html">
+                    <a class="dropdown-item" href="#!">
                         <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
                         Logout
                     </a>
@@ -90,7 +90,7 @@
                         </a>
                         <div class="collapse" id="collapseDashboards" data-bs-parent="#accordionSidenav">
                             <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
-                                <a class="nav-link" href="detail_user.html">Ruang Melati</a>
+                                <a class="nav-link" href="detail.html">Ruang Melati</a>
                                 <a class="nav-link" href="">Ruang Anggrek</a>
                                 <a class="nav-link" href="">Ruang ICU</a>
                                 <a class="nav-link" href="">Ruang Deandles</a>
@@ -103,7 +103,7 @@
                         <hr class="sidebar-divider text-black" style="background-color: #858796;">
 
                         <!-- Sidenav Accordion (Pages)-->
-                        <a class="nav-link collapsed" href="home_user.html" aria-expanded="false">
+                        <a class="nav-link collapsed" href="index.html" aria-expanded="false">
                             <div class="nav-link-icon"><i data-feather="grid"></i></div>
                             Dashboard
                         </a>
@@ -116,8 +116,8 @@
                         </a>
                         <div class="collapse" id="collapseUtilities" data-bs-parent="#accordionSidenav">
                             <nav class="sidenav-menu-nested nav">
-
-                                <a class="nav-link" href="index_user.html">Logout</a>
+                                <a class="nav-link" href="daftar-akun.html">Daftar Akun</a>
+                                <a class="nav-link" href="background.html">Logout</a>
                             </nav>
                         </div>
                         <!-- Sidenav Link (Charts)-->
@@ -132,7 +132,7 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto mt-4">
                                 <h1 class="page-header-title">
-                                    <a href="home_user.html" class="btn btn-primary btn-back">
+                                    <a href="index.html" class="btn btn-primary btn-back">
                                         <div class="box-icon">
                                             <i class="fas fa-reply"></i>
                                         </div>
@@ -142,12 +142,32 @@
                             </div>
                             <div class="col-auto mt-4">
                                 <div class="d-flex align-items-center">
-                                    <input type="text" class="form-control ml-2" placeholder="Cari ruangan...">
-                                    <a href="tambah_ruangan.html" class="btn btn-primary">
-                                        <div class="box-icon">
-                                            <i class="fas fa-plus"></i>
+                                    <input type="text" class="form-control mr-2" placeholder="Cari ruangan...">
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"><i class="fas fa-plus"></i></button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Tambah Ruangan
+                                                        </h5>
+                                                    <button class="btn-close" type="button" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <label for="namaRuangan" style="color: black;">Nama
+                                                        Ruangan</label>
+                                                    <br><br>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Masukan Nama Ruangan">
+                                                </div>
+                                                <div class="modal-footer"><button class="btn btn-danger"
+                                                        type="button" data-bs-dismiss="modal">Batal</button><button
+                                                        class="btn btn-primary" type="button">Simpan</button></div>
+                                            </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +185,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="h5 card-title mb-0">
-                                <a href="tables_user.html">Ruang Melati 1</a>
+                                <a href="tables.html">Ruang Melati 1</a>
                             </div>
                             <div>
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
@@ -184,7 +204,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="h5 card-title mb-0">
-                                <a href="tables_user.html">Ruang Melati 2</a>
+                                <a href="tables.html">Ruang Melati 2</a>
                             </div>
                             <div>
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
@@ -200,7 +220,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="h5 card-title mb-0">
-                                <a href="tables_user.html">Ruang Melati 3</a>
+                                <a href="tables.html">Ruang Melati 3</a>
                             </div>
                             <div>
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
@@ -216,7 +236,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="h5 card-title mb-0">
-                                <a href="tables_user.html">Ruang Melati 4</a>
+                                <a href="tables.html">Ruang Melati 4</a>
                             </div>
                             <div>
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
@@ -232,7 +252,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="h5 card-title mb-0">
-                                <a href="tables_user.html">Ruang Melati 5</a>
+                                <a href="tables.html">Ruang Melati 5</a>
                             </div>
                             <div>
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
@@ -248,7 +268,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="h5 card-title mb-0">
-                                <a href="tables_user.html">Ruang Melati 6</a>
+                                <a href="tables.html">Ruang Melati 6</a>
                             </div>
                             <div>
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
