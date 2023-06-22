@@ -1,1 +1,0 @@
-# Inventaris-RS-Frontend
